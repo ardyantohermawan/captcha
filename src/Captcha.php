@@ -523,7 +523,7 @@ class Captcha
      */
     public function src(string $config = 'default'): string
     {
-        return url('captcha/' . $config) . '?' . $this->str->random(8);
+        return url('api/captcha/' . $config) . '?' . $this->str->random(8);
     }
 
     /**
